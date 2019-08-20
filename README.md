@@ -27,4 +27,4 @@ Please click on the image below for a teaser video showing annotated examples an
 [![](./teaser.png)](https://streamable.com/aiefb "")
 
 ## Dataset Release
-The dataset and code for baseline experiments will be provided in stages. First release is planned for ICCV 2019.
+The dataset and code for baseline experiments will be provided in stages. First release is planned for ICCV 2019 (end of October).
