@@ -1,0 +1,49 @@
+{
+  "classes_to_extract": [
+    "vehicles",
+    "person",
+    "bicycle",
+    "traffic_light",
+    "traffic_sign"
+  ],
+  "color_scheme": "BGR",
+  "class_colors": [
+    [
+      0,
+      0,
+      255
+    ],
+    [
+      255,
+      0,
+      255
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      100,
+      255,
+      255
+    ],
+    [
+      255,
+      0,
+      0
+    ]
+  ],
+  "class_indexes": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "filter_depict_objects": true,
+  "filter_glass_cover_objects": true,
+  "filter_occluded_objects": true,
+  "min_obj_size": 400,
+  "debug": false
+}

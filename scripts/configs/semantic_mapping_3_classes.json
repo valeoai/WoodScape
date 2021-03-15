@@ -1,0 +1,30 @@
+{
+  "classes_to_extract": [
+    "road",
+    "lanemarks",
+    "curb"
+  ],
+  "color_scheme": "BGR",
+  "class_colors": [
+    [
+      255,
+      0,
+      255
+    ],
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ]
+  ],
+  "class_indexes": [
+    1,
+    2,
+    3
+  ]
+}
