@@ -81,6 +81,7 @@ woodscape
 │   │   00001_[CAM].json
 │   │   00002_[CAM].json
 |   |   ...
+│   │
 └───soiling_dataset
         │   rgb_images
         │   │   00001_[CAM].png
