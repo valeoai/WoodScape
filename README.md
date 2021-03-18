@@ -48,9 +48,14 @@ woodscape
 |   |   ...
 │   │
 └───semantic_annotations
-│   │   00001_[CAM].png
-│   │   00002_[CAM].png
-|   |   ...
+        │   rgbLabels
+        │   │   00001_[CAM].png
+        │   │   00002_[CAM].png
+        |   |   ...
+        │   gtLabels
+        │   │   00001_[CAM].png
+        │   │   00002_[CAM].png
+        |   |   ...
 │   │
 └───box_2d_annotations
 │   │   00001_[CAM].png
@@ -63,9 +68,15 @@ woodscape
 |   |   ...
 │   │
 └───motion_annotations
-│   │   00001_[CAM].png
-│   │   00002_[CAM].png
-|   |   ...
+        │   rgbLabels
+        │   │   00001_[CAM].png
+        │   │   00002_[CAM].png
+        |   |   ...
+        │   gtLabels
+        │   │   00001_[CAM].png
+        │   │   00002_[CAM].png
+        |   |   ...
+│   │
 └───vehicle_data
 │   │   00001_[CAM].json
 │   │   00002_[CAM].json
