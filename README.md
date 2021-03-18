@@ -63,8 +63,8 @@ woodscape
 |   |   ...
 │   │
 └───motion_annotations
-│   │   00001_[CAM].json
-│   │   00002_[CAM].json
+│   │   00001_[CAM].png
+│   │   00002_[CAM].png
 |   |   ...
 └───vehicle_data
 │   │   00001_[CAM].json
