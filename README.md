@@ -1,6 +1,10 @@
 # WoodScape: A multi-task, multi-camera fisheye dataset for autonomous driving
 The repository containing tools and information about the WoodScape dataset.
 
+**Update (April 15th, 2021):**
+Calibration files (intrinsic and extrinsic parameters) are now available in our Google Drive ([link](https://drive.google.com/drive/folders/1X5JOMEfVlaXfdNy24P8VA-jMs0yzf_HR?usp=sharing)). 
+Information on calibration process can be found here: WoodScape/scripts/calibration/calibration_readme.txt
+
 **Update (March 5th, 2021):**
 WoodScape paper was published at ICCV in November 2019 and we announced that the dataset was planned to be released in Q1 2020. Unfortunately, there were unexpected data protection policies required in order to comply with requirements for EU GDPR and Chinese data laws. Specifically, we had to remove one third of our dataset which was recorded in China and also employ a third party anonymization company for the remaining data. It was exacerbated by COVID situation and the subsequent economic downturn impacting the automotive sector. We apologize for the delay in the release by more than a year.
 
@@ -16,7 +20,7 @@ Please click on the image below for a teaser video showing annotated examples an
 
 ## Dataset Contents
 
-This dataset version consists of 10K images with annotations for 6 tasks. 
+This dataset version consists of 10K images with annotations for 7 tasks. 
  * RGB images
  * Semantic segmentation
  * 2D bounding boxes
@@ -25,9 +29,9 @@ This dataset version consists of 10K images with annotations for 6 tasks.
  * Previous images
  * CAN information
  * Lens soiling data and annotations
-
-Coming Soon: 
  * Calibration Information
+ 
+Coming Soon: 
  * Fisheye sythetic data with semantic annotations
  * Lidar and dGPS scenes
 
