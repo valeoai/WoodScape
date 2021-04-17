@@ -6,9 +6,10 @@ Script to generate semantic maps from polygon annotations
 # usage: semantic_map_generator [--src_path] [--dst_path] [--class_mapping]
 # arguments:
 --src_path : instance annotations directory ex: .\\woodscape\\instance_annotations
---dst_path : semantic annotations directory ex: .\\woodscape\\semantic_annotations
---class_mapping : modify the mapping file in .\\woodscape\\scripts\\configs\\box_2d_mapping_x_classes.json
+--dst_path : semantic annotations directory ex: .\\woodscape\\box_2d_annotations
+--box_2d_class_mapping : modify the mapping file in .\\woodscape\\scripts\\configs\\box_2d_mapping_x_classes.json
 --instance_class_mapping : in .\\woodscape\\scripts\\mappers\\class_names.json
+--rgb_image_path : rgb image directory ex: .\\woodscape\\rgb_images
 
 # author: Ganesh Sistu
 # reviewers:
@@ -110,11 +111,7 @@ if __name__ == "__main__":
 
     # generate box annotations from polygon annotations
     stats_overall = list()
-    itr=0
     for source_file_name in tqdm(trace_list):
-        itr += 1
-        if itr>500:
-            break
         file_name = os.path.basename(source_file_name)
         text_file_name = file_name.replace('.json', '.txt')
         dst_file_name = os.path.join(dst_path, text_file_name)
@@ -136,7 +133,7 @@ if __name__ == "__main__":
         stats_overall.append(stats)
 
     stats_overall = np.sum(np.array(stats_overall), axis=0)
-
+   
     print('\n ********* Stats *********')
     for class_name, class_stats in zip(class_names, stats_overall):
         print(class_name, ':', np.sum(class_stats))
