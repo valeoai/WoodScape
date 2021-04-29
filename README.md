@@ -175,8 +175,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-## License
+## License for the code
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## License for the data
+[Proprietary](https://drive.google.com/file/d/12IrLnGfng6s-NogJLIvUZsCxF1NDA-FA/view?usp=sharing)
+
 
 ## Paper
 [WoodScape: A multi-task, multi-camera fisheye dataset for autonomous driving](https://arxiv.org/abs/1905.01489)  
