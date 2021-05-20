@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Script for uniform polygon points from instance annotations
+Script for uniform polygon points & 2D Boxes from instance annotations
 
 # author: Ganesh Sistu
 # reviewers:
