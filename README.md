@@ -2,7 +2,7 @@
 The repository containing tools and information about the WoodScape dataset.
 
 **Update (May 20th, 2021):**
-Scripts to generate dense polygon points for instanse segmentation are added. Precomuted bounding boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
+Scripts to generate dense polygon points for instanse segmentation are added. PreBounding boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
 
 **Update (April 15th, 2021):**
 Calibration files (intrinsic and extrinsic parameters) are now available in our Google Drive ([link](https://drive.google.com/drive/folders/1X5JOMEfVlaXfdNy24P8VA-jMs0yzf_HR?usp=sharing)). 
@@ -158,7 +158,7 @@ In windows shapely might raise polygon OSError: [WinError 126], use conda distri
 
 ## Usage
 
-To generate segmenatic or 2D boxes for more additional classes. Please use the following scripts
+To generate segmenatic or 2D boxes or dense polygon points for more additional classes. Please use the following scripts
 
 <span style="color:blue">semantic_map_generator.py</span>.:
 Generate the semantic segmentation annotations from json instance annotations 
@@ -172,6 +172,13 @@ Generates the 2D boxes from json instance annotations
 
 ```bash
 python box_2d_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/box_2d_annotations --box_2d_class_mapping [DATASET DIR]/scripts/configs/box_2d_mapping_5_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json --rgb_image_path [DATASET DIR]/data/rgb_images
+```
+
+<span style="color:blue">box_2d_generator.py</span>.:
+Generates the 2D boxes from json instance annotations
+
+```bash
+python polygon_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/polygon_annotations --box_2d_class_mapping [DATASET DIR]/scripts/configs/box_2d_mapping_5_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json --rgb_image_path [DATASET DIR]/data/rgb_images
 ```
 
 ## Contributing
