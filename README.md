@@ -174,8 +174,8 @@ Generates the 2D boxes from json instance annotations
 python box_2d_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/box_2d_annotations --box_2d_class_mapping [DATASET DIR]/scripts/configs/box_2d_mapping_5_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json --rgb_image_path [DATASET DIR]/data/rgb_images
 ```
 
-<span style="color:blue">box_2d_generator.py</span>.:
-Generates the 2D boxes from json instance annotations
+<span style="color:blue">polygon_generator.py</span>.:
+Generates the dense polygon points from json instance annotations
 
 ```bash
 python polygon_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/polygon_annotations --box_2d_class_mapping [DATASET DIR]/scripts/configs/box_2d_mapping_5_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json --rgb_image_path [DATASET DIR]/data/rgb_images
