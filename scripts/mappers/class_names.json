@@ -3,7 +3,7 @@
                "car": "vehicles",
                "train/tram": "vehicles",                       
                "truck": "vehicles",
-               "other_wheeled_transport": "vehicles",
+               "other_wheeled_transport": "void",
                "trailer": "vehicles",
                "van": "vehicles",
                "caravan": "vehicles",                              
