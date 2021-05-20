@@ -126,7 +126,7 @@ MVR --> Mirror Right CAM
 
 * Instance annotations are provided for more than 40 classes as polygons in json format. 
   A full list of classes can be found in "/scripts/mappers/class_names.json"
-  
+
 * We provide semantic segmentation annotations for 10 classes: void, road, lanes, curbs, rider, person, vehicles, bicycle, motorcycle and traffic_sign. 
   You can generate the segmentation annotations for all the 40+ classes using the provided scripts.
   See the examples,
@@ -136,8 +136,9 @@ MVR --> Mirror Right CAM
 * We provide 2D boxes for 5 classes: pedestrians, vehicles, bicycle, traffic lights and traffic sign. 
   You can generate the 2D boxes for 14+ classes using the provided scripts.
   See the example,
-  For 5 classes: "scripts/configs/box_2d_mapping_5_classes.json"
-  
+  For 5 classes: "scripts/configs/box_2d_mapping_5_classes.json" 
+  * We also provide dense polygon points for the above 5 classes. These dense uniform points can be used for generating instanse masks.
+ 
 * Motion annotations are available for 19 classes. 
   A full list of classes, indexes and colour coding can be found in motion_class_mapping.json
 
@@ -160,21 +161,21 @@ In windows shapely might raise polygon OSError: [WinError 126], use conda distri
 
 To generate segmenatic or 2D boxes or dense polygon points for more additional classes. Please use the following scripts
 
-<span style="color:blue">semantic_map_generator.py</span>.:
+<span style="color:blue">semantic_map_generator.py</span>:
 Generate the semantic segmentation annotations from json instance annotations 
 
 ```bash
 python semantic_map_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/semantic_annotations --semantic_class_mapping [DATASET DIR]/scripts/configs/semantic_mapping_9_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json
 ```
 
-<span style="color:blue">box_2d_generator.py</span>.:
+<span style="color:blue">box_2d_generator.py</span>:
 Generates the 2D boxes from json instance annotations
 
 ```bash
 python box_2d_generator.py --src_path [DATASET DIR]/data/instance_annotations/ --dst_path [DATASET DIR]/data/box_2d_annotations --box_2d_class_mapping [DATASET DIR]/scripts/configs/box_2d_mapping_5_classes.json --instance_class_mapping [DATASET DIR]/scripts/mappers/class_names.json --rgb_image_path [DATASET DIR]/data/rgb_images
 ```
 
-<span style="color:blue">polygon_generator.py</span>.:
+<span style="color:blue">polygon_generator.py</span>:
 Generates the dense polygon points from json instance annotations
 
 ```bash
