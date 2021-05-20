@@ -2,7 +2,7 @@
 The repository containing tools and information about the WoodScape dataset.
 
 **Update (May 20th, 2021):**
-Scripts to generate dense polygon points for instanse segmentation are added. PreBounding boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
+Scripts to generate dense polygon points for instanse segmentation are added. Precomputed boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
 
 **Update (April 15th, 2021):**
 Calibration files (intrinsic and extrinsic parameters) are now available in our Google Drive ([link](https://drive.google.com/drive/folders/1X5JOMEfVlaXfdNy24P8VA-jMs0yzf_HR?usp=sharing)). 
