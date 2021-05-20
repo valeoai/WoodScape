@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Script to generate 2D boxes from polygon annotations
+Script to generate polygon points from polygon annotations
 
 # usage: box2d_generator [--src_path] [--dst_path] [--box_2d_class_mapping] [--instance_class_mapping] [--rgb_image_path]
 # arguments:
@@ -22,10 +22,11 @@ Script to generate 2D boxes from polygon annotations
                      Ex: 'Car' - 0, 'Pedestrian' - 1, 'Cyclist' -2
    4    bbox         2D bounding box of object in the image (0-based index):
                      contains left, top, right, bottom pixel
+   N    polygon      Polygon (x,y) co-ordinates 
 
 Example: output.txt
-car 0 10, 20, 10, 40
-rider 1 30, 40, 10, 40
+car 0 10, 20, 10, 40, 0,5, 2, 11,..... 
+rider 1 30, 40, 10, 40, 0,5, 2, 11,..... 
 .... ... .. .. .. ..
 .... ... .. .. .. ..
 
@@ -46,7 +47,7 @@ import numpy as np
 from tqdm import tqdm
 from ann_utils import create_dir, absolute_file_paths
 from parsers.detection.filter_params import FilterParams
-from parsers.detection.helpers import read_image_as_rgb, generate_2d_boxes, write_to_file
+from parsers.detection.helpers import read_image_as_rgb, generate_polygons, write_to_file
 from parsers.detection.annotation_detection_parser import AnnotationDetectionParser
 
 
@@ -78,7 +79,7 @@ def parser_arguments():
         box_2d_classes_info = open(args.box_2d_class_mapping).read()
         box_2d_classes_mapping = json.loads(box_2d_classes_info)
 
-        return args.src_path, args.dst_path, box_2d_classes_mapping,\
+        return args.src_path, args.dst_path, box_2d_classes_mapping, \
             instance_classes_mapping, args.rgb_image_path
     else:
         raise Exception("Error: Check if the files or dirs in arguments exit!")
@@ -127,7 +128,7 @@ if __name__ == "__main__":
         parser = AnnotationDetectionParser(json_ann_name,
                                            (shape[1], shape[0]),
                                            filter_ann_params)
-        img_poly_annotations, stats = generate_2d_boxes(parser, class_names, class_colors, class_ids, class_obj_thresh,
+        img_poly_annotations, stats = generate_polygons(parser, class_names, class_colors, class_ids, class_obj_thresh,
                                                         image_rgb=image_debug, debug=debug)
         write_to_file(dst_file_name, img_poly_annotations)
         stats_overall.append(stats)
