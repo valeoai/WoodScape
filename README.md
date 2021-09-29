@@ -1,6 +1,15 @@
 # WoodScape: A multi-task, multi-camera fisheye dataset for autonomous driving
 The repository containing tools and information about the WoodScape dataset https://woodscape.valeo.com.
 
+# OmniDet: Surround View Cameras based Multi-task Visual Perception Network for Autonomous Driving
+The repository contains a [boilerplate code](omnidet) to encourage for further research in building a unified perception model for autonomous driving.
+
+<a href="https://www.youtube.com/watch?v=b62iDkLgGSI" target="_blank">
+<img width="100%, text-align:center" src="/omnidet/gif/omnidet.gif"/>
+</a>
+
+-----
+
 **Update (May 20th, 2021):**
 Scripts to generate dense polygon points for instanse segmentation are added. Precomputed boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
 
