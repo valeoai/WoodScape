@@ -2,7 +2,7 @@
 The repository containing tools and information about the WoodScape dataset https://woodscape.valeo.com.
 
 # OmniDet: Surround View Cameras based Multi-task Visual Perception Network for Autonomous Driving
-The repository contains a [boilerplate code](omnidet) to encourage for further research in building a unified perception model for autonomous driving.
+The repository contains a [boilerplate code](omnidet) to encourage further research in building a unified perception model for autonomous driving.
 
 <a href="https://www.youtube.com/watch?v=b62iDkLgGSI" target="_blank">
 <img width="100%, text-align:center" src="/omnidet/gif/omnidet.gif"/>
