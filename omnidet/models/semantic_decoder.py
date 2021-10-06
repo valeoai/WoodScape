@@ -23,11 +23,11 @@ def convblock(in_planes, out_planes):
 
 
 class SemanticDecoder(nn.Module):
-    def __init__(self, num_ch_enc, n_classes=20, cam_conv=False):
+    def __init__(self, num_ch_enc, n_classes=20):
         super().__init__()
         self.n_classes = n_classes
 
-        self.num_ch_enc = num_ch_enc if not cam_conv else num_ch_enc + 6  # [64, 64, 128, 256, 512]
+        self.num_ch_enc = num_ch_enc  # [64, 64, 128, 256, 512]
         self.num_ch_dec = np.array([16, 32, 64, 128, 256])
 
         # decoder

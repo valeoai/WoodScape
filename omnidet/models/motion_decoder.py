@@ -17,15 +17,14 @@ from models.semantic_decoder import convblock
 
 
 class MotionDecoder(nn.Module):
-    def __init__(self, num_ch_enc, n_classes=2, siamese_net=False, cam_conv=False):
+    def __init__(self, num_ch_enc, n_classes=2, siamese_net=False):
         super().__init__()
         self.n_classes = n_classes
 
-        self.num_ch_enc = num_ch_enc if not cam_conv else num_ch_enc + 6  # [64, 64, 128, 256, 512]
+        self.num_ch_enc = num_ch_enc[64, 64, 128, 256, 512]
         # [64, 64, 128, 256, 512] for motion_decoder and [128, 128, 256, 512, 1024] for siamese net
         self.num_ch_enc = num_ch_enc if not siamese_net else self.num_ch_enc * 2
         self.num_ch_dec = np.array([16, 32, 64, 128, 256]) if not siamese_net else np.array([16, 32, 64, 128, 256]) * 2
-        self.num_ch_dec = self.num_ch_dec if not cam_conv else self.num_ch_dec + 6
 
         # decoder
         self.upconv_4_0 = convblock(self.num_ch_enc[-1], self.num_ch_dec[4])
