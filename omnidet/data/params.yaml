@@ -93,7 +93,8 @@ num_classes: 10
 # -- PRE_TRAINED CONFIG --
 ###########################
 # Pre-trained weights folder path of trained models to resume training and for testing
-pretrained_weights: /path/to/the/pre-trained/weights/res18
+# /path/to/the/pre-trained/weights/res18
+pretrained_weights:
 
 # choices: ["encoder", "norm", "pose_encoder", "pose", "semantic", "motion", "detection"]
 models_to_load:  ["encoder", "detection"]
@@ -109,11 +110,14 @@ init_weights: True            # if set, inits pre-trained weights for the ONNX g
 video_name: norm              # name of the video for qualitative analysis
 
 # trained model weights path to create the onnx model
-model_path: /path/to/the/pre-trained/weights/res18
-onnx_export_path: /path/to/save/onnx-model/export/
+# /path/to/the/pre-trained/weights/res18
+model_path:
+# /path/to/save/onnx-model/export/
+onnx_export_path:
 
 # load the onnx model and verify the output using verify_onnx_models
-onnx_load_model: /path/to/saved/onnx-model/export/res18/onnx/omnidet_float32_opset12.onnx
+# /path/to/saved/onnx-model/export/res18/onnx/omnidet_float32_opset12.onnx
+onnx_load_model:
 
 ####################################################
 # -- CUDA --
