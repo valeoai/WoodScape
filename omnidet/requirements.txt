@@ -1,5 +1,6 @@
 onnxmltools==1.9.0
 onnxruntime==1.8.1
+ruamel.yaml==0.17.17
 colorama
 tqdm==4.62.1
 tifffile==2021.8.8
