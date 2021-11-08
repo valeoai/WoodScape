@@ -10,6 +10,9 @@ The repository contains a [boilerplate code](omnidet) to encourage further resea
 
 -----
 
+**Update (Nov 8th, 2021):**
+ChargePad dataset for object detection has been uploaded [here](https://drive.google.com/drive/folders/1KeLFIqOnhU2CGsD0vbiN9UqKmBSyHERd?usp=sharing)
+
 **Update (May 20th, 2021):**
 Scripts to generate dense polygon points for instanse segmentation are added. Precomputed boxes and polygon points (uniformly spaced) are now available for download [here](https://drive.google.com/drive/folders/1NKkQ25kh7pssKjnOUDjJd4GouyGRobIx)
 
