@@ -9,6 +9,8 @@ The repository contains a [boilerplate code](omnidet) to encourage further resea
 </a>
 
 -----
+**Update (Nov 16th, 2021):**
+Weather dataset for classification has been uploaded [here](https://drive.google.com/drive/folders/1t3hwbPCfbokUaaWROr6PBA4WTW0GuQJi?usp=sharing)
 
 **Update (Nov 8th, 2021):**
 ChargePad dataset for object detection has been uploaded [here](https://drive.google.com/drive/folders/1KeLFIqOnhU2CGsD0vbiN9UqKmBSyHERd?usp=sharing)
