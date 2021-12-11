@@ -21,7 +21,7 @@ class MotionDecoder(nn.Module):
         super().__init__()
         self.n_classes = n_classes
 
-        self.num_ch_enc = num_ch_enc[64, 64, 128, 256, 512]
+        self.num_ch_enc = num_ch_enc  # [64, 64, 128, 256, 512]
         # [64, 64, 128, 256, 512] for motion_decoder and [128, 128, 256, 512, 1024] for siamese net
         self.num_ch_enc = num_ch_enc if not siamese_net else self.num_ch_enc * 2
         self.num_ch_dec = np.array([16, 32, 64, 128, 256]) if not siamese_net else np.array([16, 32, 64, 128, 256]) * 2
