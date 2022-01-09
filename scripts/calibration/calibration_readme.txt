@@ -26,4 +26,4 @@ v’ = rho * Y / chi if chi != 0 else 0
 u = u’ + cx + width / 2 - 0.5
 v = v’ * aspect_ratio + cy + height / 2 - 0.5
 
-The last two lines show the final conversion to image coordinates assuming that the origin of the image coordinate system is located in the upper left corner with the upper left pixel at (0, 0). The projection itself is implemented in `projection.py` which can be found at https://github.com/valeoai/WoodScape/tree/master/scripts/calibration.
+The last two lines show the final conversion to image coordinates assuming that the origin of the image coordinate system is located in the center of the upper left pixel. The projection itself is implemented in `projection.py` which can be found at https://github.com/valeoai/WoodScape/tree/master/scripts/calibration.
