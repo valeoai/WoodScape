@@ -4,7 +4,7 @@ The repository containing tools and information about the WoodScape dataset http
 # [OmniDet: Surround View Cameras based Multi-task Visual Perception Network for Autonomous Driving](https://sites.google.com/view/omnidet/home)
 The repository contains a [boilerplate code](omnidet) to encourage further research in building a unified perception model for autonomous driving.
 
-<a href="https://www.youtube.com/watch?v=b62iDkLgGSI" target="_blank">
+<a href="https://youtu.be/xbSjZ5OfPes" target="_blank">
 <img width="100%, text-align:center" src="/omnidet/gif/omnidet.gif"/>
 </a>
 
