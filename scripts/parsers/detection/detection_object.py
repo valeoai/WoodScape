@@ -230,7 +230,9 @@ class DetectionObject(object):
         # Merge polygons
         frist_polygon = self.get_polygon()
         second_polygon = object_to_merge.get_polygon()
-        union_polygon = cascaded_union([frist_polygon, second_polygon])
+        frist_polygon_buf = frist_polygon.buffer(0)
+        second_polygon_buf = second_polygon.buffer(0)
+        union_polygon = cascaded_union([frist_polygon_buf, second_polygon_buf])
 
         self.set_class_name(self.__class_name)
         self.set_metadata(self.__metadata)
