@@ -240,7 +240,7 @@ class IoU:
         self.dataset = dataset
 
         self.classes = dict(woodscape_raw=["void", "road", "lanemarks", "curb", "person",
-                                           "rider", "vehicles", "bicycle", "motorcycle""traffic_sign"],
+                                           "rider", "vehicles", "bicycle", "motorcycle", "traffic_sign"],
                             motion=['static', 'motion'], )
 
         self.reset()
