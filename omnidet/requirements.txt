@@ -10,7 +10,7 @@ torch_dct==0.1.5
 matplotlib==3.1.3
 scikit_image==0.16.2
 torch==1.9.0
-mpmath==1.2.1
+mpmath==1.3.0
 torchvision==0.10.0
 opencv_python==4.5.3.56
 pandas==1.3.2
